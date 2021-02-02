@@ -1,0 +1,37 @@
+.cds-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px 0;
+    .cd {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        flex-basis: 200px;
+        padding: 20px;
+        margin: 10px 20px;
+        height: 360px;
+        background: black;
+        text-align: center;
+        img {
+            max-width: 100%;
+        }
+        h2 {
+            margin: 20px 0;
+            color: white;
+            font-size: 18px;
+        }
+        span.author {
+            color: grey;
+            font-size: 20px;
+        }
+        span.year {
+            color: grey;
+        }
+    }
+}
+
+
+

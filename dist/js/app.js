@@ -13,8 +13,10 @@ var app = new Vue({
     dischi: []
   },
   mounted: function mounted() {
-    axios.get("src/js/app.js").then(function (response) {
-      console.log(response);
+    var _this = this;
+
+    axios.get("api_dischi.php").then(function (response) {
+      _this.dischi = response.data;
     });
   }
 });

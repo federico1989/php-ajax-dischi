@@ -37,7 +37,7 @@
                     ?>
             </div>
             <!-- Versione Vue -->
-            <section id="root">
+            <section>
             <div class="container d-flex">
                 <img src="dist/img/logo.png" alt="logo"/>
                 <div class="d-flex">
@@ -46,15 +46,18 @@
                 </div>
             </div>
             </section>
-            <div class="cds-container container">
-                <div class="cd">
-
+            <div id="root" class="cds-container container">
+                <div class="cd" v-for="album in dischi">
+                    <img :src="album.poster" alt="">
+                    <h2>{{album.title}}</h2>
+                    <span class="author">{{album.author}}</span>
+                    <span class="year">{{album.year}}</span>
                 </div>
             </div>
         </main>
 
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-        <script src="dist/js/main.js" charset="utf-8"></script>
+        <script src="dist/js/app.js" charset="utf-8"></script>
     </body>
 </html>

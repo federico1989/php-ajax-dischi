@@ -6,9 +6,9 @@ var app = new Vue ({
         ]
     },
     mounted(){
-        axios.get("src/js/app.js")
+        axios.get("api_dischi.php")
         .then(response => {
-            console.log(response);
+            this.dischi = response.data;
         });
     }
 

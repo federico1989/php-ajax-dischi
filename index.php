@@ -13,9 +13,14 @@
         <link rel="stylesheet" href="./dist/css/style.css">
     </head>
     <body>
+        <!-- Versione php -->
         <header>
-            <div class="container">
-                <img src="dist/img/logo.png" alt="logo" />
+            <div class="container d-flex">
+                <img src="dist/img/logo.png" alt="logo"/>
+                <div class="d-flex">
+                    <img src="dist/img/php.png" alt="logo"/>
+                    <h1>Version</h1>
+                </div>
             </div>
         </header>
         <main>
@@ -30,6 +35,21 @@
                         </div>
                     <?php }
                     ?>
+            </div>
+            <!-- Versione Vue -->
+            <section id="root">
+            <div class="container d-flex">
+                <img src="dist/img/logo.png" alt="logo"/>
+                <div class="d-flex">
+                    <img src="dist/img/vue.png" alt="logo"/>
+                    <h1>Version</h1>
+                </div>
+            </div>
+            </section>
+            <div class="cds-container container">
+                <div class="cd">
+
+                </div>
             </div>
         </main>
 
